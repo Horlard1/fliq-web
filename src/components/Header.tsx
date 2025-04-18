@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   return (
@@ -47,6 +48,9 @@ export default function Header() {
       >
         Join the waitlist
       </button>
+      <span className="w-10 sm:hidden h-10 flex justify-center items-center">
+        <GiHamburgerMenu />
+      </span>
     </header>
   );
 }
